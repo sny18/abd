@@ -1,0 +1,17 @@
+pipeline{
+    agent any
+stages{
+    stage('printing a message'){
+        steps{
+            echo "hi this is sathya"
+        }
+    }
+    stage('another stage'){
+        steps{
+            sh'''
+            echo "how r u"
+            '''
+        }
+    }
+}
+}
